@@ -80,7 +80,7 @@ INSIDE
  ├─ PC1
  └─ PC2
 
-> <img width="1175" height="685" alt="화면 캡처 2026-06-21 235604" src="https://github.com/user-attachments/assets/65ce1143-66c7-418f-b4d8-4e2cd9e8283e" />
+<img width="1175" height="685" alt="화면 캡처 2026-06-21 235604" src="https://github.com/user-attachments/assets/65ce1143-66c7-418f-b4d8-4e2cd9e8283e" />
 
 ---
 
