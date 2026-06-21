@@ -15,7 +15,32 @@ OSPF, VLAN, VRRP를 활용하여 네트워크를 설계하고 DMZ 영역에 Word
 또한 Suricata IDS를 통해 ICMP Ping, SQL Injection, Command Injection 등의 공격을 탐지하고 Elasticsearch와 Kibana를 활용하여 보안 이벤트를 시각화하였습니다.
 
 ---
+---
+## 👨‍💻 담당 역할 (My Contribution)
 
+### Server
+
+- DNS Master / Slave 구축
+- WordPress 웹 서버 구축
+- DVWA 취약점 테스트 서버 구축
+
+### Monitoring
+
+- Elasticsearch Multi Node Cluster 구축
+- Filebeat 연동
+- Kibana Dashboard 구성
+
+### Network
+
+- GNS3 기반 네트워크 구성 참여
+- VLAN, OSPF, VRRP 구성 검증
+- 내부망 / 외부망 / DMZ 통신 테스트
+
+### Documentation
+
+- 프로젝트 계획서 작성
+- 결과 보고서 작성
+- 최종 발표 진행
 ## 🛠 개발 환경 및 기술 스택 (Tech Stacks)
 
 | 분류 | 기술 스택 |
@@ -187,50 +212,18 @@ DVWA 환경에서 Command Injection 공격을 수행하였으며, POST 요청 �
 
 이를 통해 시스템 명령 실행 시도를 탐지할 수 있도록 구성하였습니다.
 
----
-
-## 👨‍💻 담당 역할 (My Contribution)
-
-### Server
-
-- DNS Master / Slave 구축
-- WordPress 웹 서버 구축
-- DVWA 취약점 테스트 서버 구축
-
-### Monitoring
-
-- Elasticsearch Multi Node Cluster 구축
-- Filebeat 연동
-- Kibana Dashboard 구성
-
-### Network
-
-- GNS3 기반 네트워크 구성 참여
-- VLAN, OSPF, VRRP 구성 검증
-- 내부망 / 외부망 / DMZ 통신 테스트
-
-### Documentation
-
-- 프로젝트 계획서 작성
-- 결과 보고서 작성
-- 최종 발표 진행
-
----
-
 ## 📊 프로젝트 성과
 
-- OSPF 기반 동적 라우팅 구성
-- VLAN 기반 네트워크 분리
-- VRRP 기반 Gateway 이중화
-- DNS Master / Slave 구축
-- WordPress 웹 서버 구축
-- DVWA 취약점 테스트 환경 구축
-- Suricata IDS 구축
-- ICMP Ping 탐지
-- SQL Injection 탐지
-- Command Injection 탐지
-- Elasticsearch Multi Node Cluster 구축
-- Kibana Dashboard 시각화
+DNS Master / Slave 구축
+WordPress 구축
+DVWA 취약점 테스트 환경 구축
+Suricata IDS 구축
+ICMP Ping 탐지 구현
+SQL Injection 탐지 구현
+Command Injection 탐지 구현
+Elasticsearch Multi Node Cluster 구축
+Filebeat 기반 로그 수집 환경 구성
+Kibana Dashboard 기반 보안 이벤트 시각화
 
 ---
 
@@ -246,6 +239,8 @@ DVWA 환경에서 Command Injection 공격을 수행하였으며, POST 요청 �
 
 ## ⭐ Result
 
-실제 네트워크 환경과 유사한 구조를 설계하여 Network, Server, Security, Monitoring 전 과정을 경험하였습니다.
+본 프로젝트를 통해 웹 서비스 환경 구축부터 침입 탐지, 로그 수집, 분석 및 시각화까지의 전 과정을 경험하였습니다.
 
-Suricata IDS와 ELK Stack을 연동하여 공격 이벤트를 수집, 분석, 시각화하는 보안 모니터링 환경을 구현하였습니다.
+특히 Elasticsearch Multi Node Cluster를 직접 구축하고 Suricata IDS와 ELK Stack을 연동하여 공격 이벤트를 수집·분석·시각화하는 보안 모니터링 환경을 구현하였습니다.
+
+이를 통해 서버 구축, 로그 분석, 보안 모니터링에 대한 실무 역량을 향상시킬 수 있었습니다.
