@@ -33,7 +33,6 @@ OSPF, VLAN, VRRP를 활용하여 네트워크를 설계하고 DMZ 영역에 Word
 ### Network
 
 - GNS3 기반 네트워크 구성 참여
-- VLAN, OSPF, VRRP 구성 검증
 - 내부망 / 외부망 / DMZ 통신 테스트
 
 ### Documentation
