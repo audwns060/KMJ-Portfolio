@@ -2,40 +2,55 @@
 my-portfolio
 # 🚨 Suricata IDS Monitoring System
 
-## 프로젝트 소개
+> GNS3 기반 네트워크 환경에서 Suricata IDS와 ELK Stack을 활용하여 실시간 침입 탐지 및 로그 분석 시스템을 구축한 프로젝트
 
-GNS3 기반 네트워크 환경에서 Suricata IDS와 ELK Stack을 활용하여
-실시간 침입 탐지 및 로그 분석 환경을 구축한 프로젝트입니다.
-
-SQL Injection, XSS, Brute Force 공격을 탐지하고
-Kibana Dashboard를 통해 시각화하였습니다.
+![Linux](https://img.shields.io/badge/Linux-Rocky9-green)
+![ELK](https://img.shields.io/badge/ELK-Stack-yellow)
+![Suricata](https://img.shields.io/badge/IDS-Suricata-red)
+![Network](https://img.shields.io/badge/Network-OSPF%20%7C%20VLAN%20%7C%20VRRP-blue)
 
 ---
 
-## 프로젝트 기간
+# 📌 Project Overview
+
+본 프로젝트는 네트워크 트래픽과 웹 로그를 수집하여 실시간 침입 탐지 및 분석 환경을 구축하는 것을 목표로 진행되었습니다.
+
+GNS3 기반 가상 네트워크 환경에서 OSPF, VLAN, VRRP를 이용한 네트워크를 설계하고 WordPress 및 DVWA 서버를 구축하여 실제 공격 시나리오를 생성하였습니다.
+
+수집된 로그는 Filebeat를 통해 Elasticsearch로 전달하고 Kibana Dashboard를 통해 시각화하였습니다.
+
+또한 SQL Injection, XSS, Brute Force 공격 탐지 규칙을 적용하여 보안 이벤트를 분석하였습니다.
+
+---
+
+# 📅 Project Period
 
 2025.12.17 ~ 2025.12.31
 
 ---
 
-## 기술 스택
+# 🛠 Tech Stack
 
-### Network
+## Network
+
 - GNS3
 - OSPF
 - VLAN
 - VRRP
 
-### Security
+## Security
+
 - Suricata IDS
 - Custom Detection Rules
 
-### Monitoring
+## Monitoring
+
 - Elasticsearch
 - Kibana
 - Filebeat
 
-### Server
+## Server
+
 - Rocky Linux 9
 - WordPress
 - DVWA
@@ -43,49 +58,182 @@ Kibana Dashboard를 통해 시각화하였습니다.
 
 ---
 
-## 담당 역할
+# 🏗 Architecture
 
-### 네트워크
-- VLAN 구성
+```text
+Internet
+   │
+ ┌─┴─┐
+R1   R2
+ │   │
+FW1 FW2
+   │
+ DMZ
+ ├─ WordPress
+ ├─ DVWA
+ ├─ DNS Master
+ ├─ DNS Slave
+ ├─ Suricata
+ └─ Elasticsearch Cluster
+
+INSIDE
+ ├─ PC1
+ └─ PC2
+```
+
+> 실제 구성도 이미지는 아래에 추가 예정
+
+```markdown
+![Network Architecture](images/network_topology.png)
+```
+
+---
+
+# 👨‍💻 My Contribution
+
+## Network
+
+- VLAN 기반 네트워크 분리
 - OSPF 동적 라우팅 구성
-- VRRP 이중화 구성
+- VRRP 기반 Gateway 이중화 구현
 
-### 서버
-- DNS 서버 구축
+## Server
+
+- DNS Master / Slave 구축
 - WordPress 구축
 - DVWA 구축
 
-### 로그 분석
-- Elasticsearch 3 Node Cluster 구축
+## Monitoring
+
+- Elasticsearch Multi Node Cluster 구축
 - Filebeat 연동
 - Kibana Dashboard 구성
 
-### 문서화
-- 프로젝트 보고서 작성
+## Documentation
+
+- 프로젝트 계획서 작성
+- 결과 보고서 작성
 - 최종 발표 진행
 
 ---
 
-## 주요 성과
+# 🚀 Key Achievements
+
+### Network
 
 - OSPF 기반 동적 라우팅 구성
+- VLAN 기반 네트워크 분리
 - VRRP 기반 Gateway 이중화
-- DNS Master / Slave 구성
+
+### Security
+
 - Suricata IDS 구축
 - SQL Injection 탐지
 - XSS 탐지
 - Brute Force 탐지
-- Elasticsearch 다중 노드 구축
+
+### Monitoring
+
+- Elasticsearch 3 Node Cluster 구축
+- Filebeat 연동
 - Kibana Dashboard 시각화
 
 ---
 
-## Architecture
+# 🔍 Attack Detection Scenario
 
-![architecture](images/architecture.png)
+## ICMP Ping Detection
+
+```text
+Attacker
+   ↓
+ ICMP Request
+   ↓
+ Suricata Alert
+   ↓
+ Elasticsearch
+   ↓
+ Kibana Dashboard
+```
 
 ---
 
-## Dashboard
+## SQL Injection Detection
 
-![dashboard](images/dashboard.png)
+```sql
+' OR 1=1 --
+```
+
+- Suricata Rule 기반 탐지
+- Elasticsearch 저장
+- Kibana Dashboard 시각화
+
+---
+
+## XSS Detection
+
+```html
+<script>alert('xss')</script>
+```
+
+- Suricata Rule 기반 탐지
+- Elasticsearch 저장
+- Kibana Dashboard 시각화
+
+---
+
+## Brute Force Detection
+
+```text
+admin
+admin123
+password
+123456
+```
+
+- 반복 로그인 시도 탐지
+- Alert 생성
+- Dashboard 시각화
+
+---
+
+# 📊 Dashboard
+
+```markdown
+![Dashboard](images/dashboard.png)
+```
+
+---
+
+# 📚 Learned
+
+- 네트워크 설계와 서버 구축의 연계 이해
+- IDS 기반 침입 탐지 프로세스 학습
+- ELK Stack 기반 로그 수집 및 분석 경험
+- 보안 이벤트 시각화 경험
+- 팀 프로젝트 협업 및 문서화 경험
+
+---
+
+# 📎 Reference
+
+- Suricata
+- Elasticsearch
+- Kibana
+- Filebeat
+- GNS3
+
+---
+
+# ⭐ Result
+
+실제 네트워크 환경과 유사한 구조를 설계하여
+
+- Network Engineering
+- Server Administration
+- Security Monitoring
+- Log Analysis
+
+전 과정을 경험하였으며,
+
+실시간 침입 탐지 및 보안 모니터링 환경을 구현하였습니다.
