@@ -80,13 +80,7 @@ INSIDE
  ├─ PC1
  └─ PC2
 
-
-> 실제 구성도 이미지는 아래에 추가 예정
-
-
-> <img width="1176" height="581" alt="화면 캡처 2026-06-21 235539" src="https://github.com/user-attachments/assets/2b156f27-8c21-4327-8685-ca70b656fefd" />
-
-
+> <img width="1175" height="685" alt="화면 캡처 2026-06-21 235604" src="https://github.com/user-attachments/assets/65ce1143-66c7-418f-b4d8-4e2cd9e8283e" />
 
 ---
 
@@ -200,10 +194,7 @@ password
 
 # 📊 Dashboard
 
-
-<img width="1175" height="685" alt="화면 캡처 2026-06-21 235604" src="https://github.com/user-attachments/assets/43245775-fdf8-4aa3-96a5-84a825e3c69f" />
-
-
+<img width="1176" height="581" alt="화면 캡처 2026-06-21 235539" src="https://github.com/user-attachments/assets/6f298b80-c6bc-4ddd-b7bc-c07940c08d96" />
 
 ---
 
