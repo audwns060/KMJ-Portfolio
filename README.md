@@ -84,7 +84,7 @@ INSIDE
 > 실제 구성도 이미지는 아래에 추가 예정
 
 ```markdown
-![Network Architecture](images/network_topology.png)
+![Dashboard](images/dashboard.png)
 ```
 
 ---
