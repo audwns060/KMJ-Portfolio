@@ -60,7 +60,7 @@ GNS3 기반 가상 네트워크 환경에서 OSPF, VLAN, VRRP를 이용한 네�
 
 # 🏗 Architecture
 
-```text
+text
 Internet
    │
  ┌─┴─┐
@@ -79,14 +79,14 @@ FW1 FW2
 INSIDE
  ├─ PC1
  └─ PC2
-```
+
 
 > 실제 구성도 이미지는 아래에 추가 예정
 
-```markdown
-<img width="1176" height="581" alt="화면 캡처 2026-06-21 235539" src="https://github.com/user-attachments/assets/2b156f27-8c21-4327-8685-ca70b656fefd" />
 
-```
+> <img width="1176" height="581" alt="화면 캡처 2026-06-21 235539" src="https://github.com/user-attachments/assets/2b156f27-8c21-4327-8685-ca70b656fefd" />
+
+
 
 ---
 
@@ -200,10 +200,10 @@ password
 
 # 📊 Dashboard
 
-```markdown
+
 <img width="1175" height="685" alt="화면 캡처 2026-06-21 235604" src="https://github.com/user-attachments/assets/43245775-fdf8-4aa3-96a5-84a825e3c69f" />
 
-```
+
 
 ---
 
