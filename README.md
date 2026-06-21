@@ -84,7 +84,7 @@ INSIDE
 > 실제 구성도 이미지는 아래에 추가 예정
 
 ```markdown
-![Dashboard](images/dashboard.png)
+<img width="1183" height="684" alt="image" src="https://github.com/user-attachments/assets/28abe699-d1aa-48e7-933c-c66e173d0f32" />
 ```
 
 ---
@@ -200,7 +200,8 @@ password
 # 📊 Dashboard
 
 ```markdown
-![Dashboard](images/dashboard.png)
+<img width="1180" height="578" alt="image" src="https://github.com/user-attachments/assets/da41717e-0c86-4e3d-a562-e56ae244fdba" />
+
 ```
 
 ---
