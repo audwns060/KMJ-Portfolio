@@ -20,10 +20,10 @@ OSPF, VLAN, VRRP를 활용하여 네트워크를 설계하고 DMZ 영역에 Word
 
 | 분류 | 기술 스택 |
 |---|---|
-| Network | GNS3, OSPF, VLAN, VRRP |
+| Network | GNS3 |
 | Security | Suricata IDS |
 | Monitoring | Elasticsearch, Kibana, Filebeat |
-| Server | Rocky Linux 9 |
+| Server OS | Rocky Linux 9 |
 | Web Service | WordPress, DVWA |
 | DNS | BIND DNS Master / Slave |
 
