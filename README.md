@@ -2,8 +2,7 @@
 
 > Infrastructure · Cloud · Security
 
-인프라 구축과 보안 환경 구성을 중심으로 진행한 프로젝트를 정리한 포트폴리오입니다.  
-Terraform 기반 AWS 인프라 구축과 Suricata·ELK 기반 IDS 모니터링 환경 구축을 수행했습니다.
+Terraform 기반 AWS 인프라 구축과 Suricata·ELK 기반 IDS 모니터링 환경 구축 프로젝트를 정리한 포트폴리오입니다.
 
 ---
 
