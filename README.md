@@ -11,7 +11,7 @@ Terraform 기반 AWS 인프라 구축과 Suricata·ELK 기반 IDS 모니터링 �
 ### 🔹 AWS + IDS 통합 포트폴리오
 두 프로젝트의 설계 과정, 구축 내용 및 결과를 하나의 문서로 정리했습니다.
 
-👉 [AWS · IDS 프로젝트 통합 포트폴리오](./AWS_IDS%20포트폴리오.pdf)
+📄 [AWS · IDS 프로젝트 통합 포트폴리오](./AWS_IDS%20포트폴리오.pdf)
 ---
 
 ## ☁️ Project 01. Terraform 기반 AWS 인프라 구축
